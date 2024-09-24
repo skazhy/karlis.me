@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+html {
+  display: flex;
+  justify-content: center;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  line-height: 2em;
+  padding-top: 2em;
+  width: 600px;
+  font-family: 'Andale Mono', monospace;
+}
+h1 { font-size: 1em; }
+a:hover { background: yellow; }
+.light { color: #aaa; }
+@media(prefers-color-scheme: dark) {
+  body {
+    background-color: #333;
+    color: #fff;
+  }
+  a { color: yellow; }
+  a:hover { background: black; }
+}
+@media(max-width: 1000px) {
+  body {
+   font-size: 24px;
+   padding: 2em;
+   width: 100%;
+  }
+}

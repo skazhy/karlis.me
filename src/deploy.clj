@@ -5,6 +5,7 @@
             [clojure.java.io :as io]
             [clojure.set :as set]
             [clojure.string :as str]
+            [render]
             [taoensso.timbre :as log]))
 
 (def site-id (delay (System/getenv "NETLIFY_SITE_ID")))
@@ -17,7 +18,7 @@
       last
       str/trim))
 
-(defn local-path [rel-path] (str "site/" rel-path))
+(defn local-path [rel-path] (str "target/" rel-path))
 (defn netlify-path [rel-path] (str "/" rel-path))
 
 (defn site-path-hashes []
