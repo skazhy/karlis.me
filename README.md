@@ -5,8 +5,11 @@
 * [babashka](https://github.com/babashka/babashka)
 * OpenSSL
 
-Deployed on Netlify with `bb src/deploy.clj`. Requires env vars `NETLIFY_TOKEN` with
-the personal access token & `NETLIFY_SITE_ID` to contain, well, the Netlify site id.
+## Deployment
+
+* Deployed on [Netlify](https://www.netlify.com/)
+* Env vars `NETLIFY_TOKEN` and `NETLIFY_SITE_ID` need to be set
+* Deployed with a babashka script: `bb src/deploy.clj`
 
 ___
 
